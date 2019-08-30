@@ -34,6 +34,14 @@ The YouTube shortcode takes a YouTube video ID and creates the markup for a flui
 ### CodePen
 
 The CodePen shortcode takes multiple values to customize your embed.
+```
+{% codepen "URL", {options} %}
+
+{% codepen "https://codepen.io/url/path" %}
+{% codepen "https://codepen.io/url/path", {"tabs": "css,result", "height: "500", "theme": 2452" }}
+
+```
+
 
 The various options have a required order (hopefully that will change in the future): 
 * `url`: The full URL to your pen 
@@ -43,6 +51,3 @@ The various options have a required order (hopefully that will change in the fut
 
 The first argument is the only required argument and it's the Pen's full URL. In Nunjucks, they need to be comma separated, in Liquid commas are optional.
 
-```
-{% codepen "https://codepen.io/url/path" %}
-```
