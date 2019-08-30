@@ -1,0 +1,18 @@
+{
+  "name": "eleventy-plugin-blog-tools",
+  "version": "0.0.1",
+  "description": "A collection of shorttags, filters and functionality to make blog posts easier",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eleventy",
+    "eleventy-plugin"
+  ],
+  "author": "Bryan Robinson",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
+  }
+}
