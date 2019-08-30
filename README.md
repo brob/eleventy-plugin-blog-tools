@@ -44,5 +44,5 @@ The various options have a required order (hopefully that will change in the fut
 The first argument is the only required argument and it's the Pen's full URL. In Nunjucks, they need to be comma separated, in Liquid commas are optional.
 
 ```
-{% codepen "https://codepen.io/url/path" }
+{% codepen "https://codepen.io/url/path" %}
 ```
