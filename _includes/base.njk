@@ -15,7 +15,7 @@
 
 <h3> posts</h3>
 {% if sortField %}
-{% for post in collections.posts | related("sortField", sortField, 1) %}
+{% for post in collections.pluginPosts | related("sortField", sortField, 1) %}
 {{ post.data.title }}
 {% endfor %}
 {% endif %}

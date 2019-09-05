@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("related", related);
 
 
-    eleventyConfig.addCollection('posts', collection => {
+    eleventyConfig.addCollection('pluginPosts', collection => {
         return collection.getFilteredByGlob('sample/posts/*.md');
     });
 };
