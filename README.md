@@ -35,7 +35,7 @@ The YouTube shortcode takes a YouTube video ID and creates the markup for a flui
 
 The CodePen shortcode takes multiple values to customize your embed.
 ```
-{% codepen "URL", {options} %}
+{% codepen "URL", "codepen tabs string", "unitlessHeight", "theme ID" %}
 
 {% codepen "https://codepen.io/url/path" %}
 {% codepen "http://codepen.io/brob/pen/vGRBeQ/", "css,result", "900", "26704"  %}
