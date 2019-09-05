@@ -38,7 +38,7 @@ The CodePen shortcode takes multiple values to customize your embed.
 {% codepen "URL", {options} %}
 
 {% codepen "https://codepen.io/url/path" %}
-{% codepen "https://codepen.io/url/path", {"tabs": "css,result", "height: "500", "theme": 2452" }}
+{% codepen "http://codepen.io/brob/pen/vGRBeQ/", "css,result", "900", "26704"  %}
 
 ```
 
