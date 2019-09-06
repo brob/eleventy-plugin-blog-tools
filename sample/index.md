@@ -7,6 +7,13 @@ layout: "base.njk"
     {% youtube "-ugZb-o0l0s" %}
 </div>
 
+
+## Vimeo Embed
+
+<div style="width: 500px;">
+    {% vimeo "65107797" %}
+</div>
+
 ## Codepen Embed
 {"tabs": "css,result", "height": "800", "theme":"26704"}
 
