@@ -10,9 +10,6 @@
 
 {{ content | safe }}
 
-
-
-
 {% if sortField %}
     <h3>Related posts</h3>
     {% for post in collections.pluginPosts | related("sortField", sortField, 1) %}
