@@ -13,11 +13,16 @@
 
 
 
-<h3> posts</h3>
 {% if sortField %}
-{% for post in collections.pluginPosts | related("sortField", sortField, 1) %}
-{{ post.data.title }}
-{% endfor %}
+    <h3>Related posts</h3>
+    {% for post in collections.pluginPosts | related("sortField", sortField, 1) %}
+        {{ post.data.title }}
+    {% endfor %}
+{% else %}
+    <h3>Limited Posts</h3>
+    {% for post in collections.pluginPosts | limit(2) %}
+        <li>{{ post.data.title }}</li>
+    {% endfor %}
 {% endif %}
 
 </body>
