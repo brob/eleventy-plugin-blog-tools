@@ -15,8 +15,8 @@ layout: "base.njk"
 </div>
 
 ## Codepen Embed
-{"tabs": "css,result", "height": "800", "theme":"26704"}
 
-{% codepen "http://codepen.io/brob/pen/vGRBeQ/", {tabs: "css,result", height: "500"}  %}
+{% codepen "http://codepen.io/brob/pen/vGRBeQ/", {tabs: "css,result", height: "300"}  %}
 
-{% blockquote "Bryan Robinson", "newclass" %}This is a quote by the person in the citation{% endblockquote %}
+
+{% blockquote "Bryan Robinson", "something"%}This is a quote by the person in the citation{% endblockquote %}
