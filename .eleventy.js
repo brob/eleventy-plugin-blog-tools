@@ -36,15 +36,5 @@ module.exports = {
         eleventyConfig.addFilter("related", related);
         eleventyConfig.addFilter("limit", limit);
 
-        
-
-
-        eleventyConfig.addCollection('pluginPosts', collection => {
-            return collection.getFilteredByGlob('sample/posts/*.md');
-        });
-
-        return {
-            markdownTemplateEngine: "njk"
-        }
     }
 };

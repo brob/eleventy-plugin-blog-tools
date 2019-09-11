@@ -7,6 +7,10 @@ module.exports = function(eleventyConfig) {
         codepenHeight: "1000"
     });
     
+    eleventyConfig.addCollection('pluginPosts', collection => {
+        return collection.getFilteredByGlob('posts/*.md');
+    });
+
     return {
         markdownTemplateEngine: "njk"
     }
