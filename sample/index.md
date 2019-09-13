@@ -19,4 +19,8 @@ layout: "base.njk"
 {% codepen "http://codepen.io/brob/pen/vGRBeQ/", {tabs: "css,result", height: "300"}  %}
 
 
-{% blockquote "Bryan Robinson", "something"%}This is a quote by the person in the citation{% endblockquote %}
+{% blockquote "Bryan Robinson", "something" %}
+This is a quote by the person in the citation
+
+Another p?
+{% endblockquote %}
