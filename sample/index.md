@@ -17,4 +17,8 @@ layout: "base.njk"
 ## Codepen Embed
 {"tabs": "css,result", "height": "800", "theme":"26704"}
 
-{% codepen "http://codepen.io/brob/pen/vGRBeQ/", {tabs: "css,result", height: "500"}  %}
+{% codepen 
+    "http://codepen.io/brob/pen/vGRBeQ/", 
+    {tabs: "html,css", height: "500"} 
+%}
+

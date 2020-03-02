@@ -5,12 +5,14 @@ const codepen = require("./src/codepen");
 const related = require("./src/related");
 const limit = require("./src/limit");
 const excerpt = require("./src/excerpt");
+const image = require("./src/image");
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addShortcode("youtube", youtube);
     eleventyConfig.addShortcode("vimeo", vimeo);
     eleventyConfig.addShortcode("codepen", codepen);
     eleventyConfig.addShortcode("excerpt", excerpt);
+    eleventyConfig.addNunjucksShortcode("image", image);
     eleventyConfig.addNunjucksShortcode("codepen", codepenNunjucks);
     eleventyConfig.addFilter("related", related);
     eleventyConfig.addFilter("limit", limit);
@@ -21,7 +23,9 @@ module.exports = function(eleventyConfig) {
         return collection.getFilteredByGlob('sample/posts/*.md');
     });
 
+   
     return {
-        markdownTemplateEngine: "njk"
+        "markdownTemplateEngine": "njk"
     }
+
 };

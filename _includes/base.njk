@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test for SVG Contents</title>
-</head>
-<body>
-
-
+{% include 'components/header.html' %}
 {% for post in collections.pluginPosts %}
     <h2>{{ post.data.title }}</h2>
 
