@@ -3,13 +3,7 @@ const seperator = {start: '<!-- excerpt start -->', end: '<!-- excerpt end -->'}
 
 module.exports = function(article) {
     let excerpt = article.data.excerpt ? `<p>${article.data.excerpt}</p>` : "";
-    
-    
-
-
     const articleContent = article.templateContent;
-
-
 
     let startPosition = articleContent.toLowerCase().indexOf(seperator.start);
     let endPosition = articleContent.toLowerCase().indexOf(seperator.end);
@@ -22,9 +16,5 @@ module.exports = function(article) {
         excerpt = articleContent.substring(startPosition + 3, endPosition);
         console.log(startPosition, endPosition, excerpt);
     }
-
-        
-    
-
     return excerpt
 } 
