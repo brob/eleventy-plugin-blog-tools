@@ -10,11 +10,10 @@ module.exports = function(article) {
     if (startPosition !== -1 && endPosition !== -1) {
         excerpt = articleContent.substring(startPosition + seperator.start.length, endPosition);
     } else if (!article.data.excerpt) {
-        console.log(article.data.title, 'no excerpt')
         let startPosition = articleContent.toLowerCase().indexOf('<p>');
         let endPosition = articleContent.toLowerCase().indexOf('</p>');
+        
         excerpt = articleContent.substring(startPosition + 3, endPosition);
-        console.log(startPosition, endPosition, excerpt);
     }
     return excerpt
 } 
