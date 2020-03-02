@@ -23,6 +23,25 @@ module.exports = function(eleventyConfig) {
 
 There are multiple shortcodes and filters in this plugin. Each has its own usage.
 
+
+### Excerpt
+
+This custom tag creates an excerpt from a page with front matter and/or standard markdown. 
+
+Main Usage:
+
+```html
+    {% excerpt post %}
+```
+
+Where `post` is an instance of a markdown file being pulled in via an 11ty template engine.
+
+The Excerpt is built from one of three options:
+
+1. First Excerpt looks for a pair of HTML comments in your markdown specifying a start and end point for the excerpt. `<!-- excerpt start -->` and `<!-- excerpt end -->` (capitalization not important)
+2. If no start and end specified, the Excerpt tag will then look for the `excerpt` property in your MD file's frontmatter.
+3. If no `excerpt` is found in frontmatter, the tag will pull the first paragraph of the post.
+
 ### YouTube
 
 The YouTube shortcode takes a YouTube video ID and creates the markup for a fluidly-responsive YouTube embed.

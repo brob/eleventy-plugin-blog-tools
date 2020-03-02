@@ -8,6 +8,16 @@
 </head>
 <body>
 
+
+{% for post in collections.pluginPosts %}
+    <h2>{{ post.data.title }}</h2>
+
+    {% excerpt post %}
+    
+{% endfor %}
+
+
+
 {{ content | safe }}
 
 
