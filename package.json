@@ -4,7 +4,8 @@
   "description": "A collection of shorttags, filters and functionality to make blog posts easier",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd sample && eleventy --serve"
   },
   "keywords": [
     "eleventy",
