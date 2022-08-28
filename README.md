@@ -37,8 +37,8 @@ Main Usage:
 Where `post` is an instance of a markdown file being pulled in via an 11ty template engine.
 
 The Excerpt is built from one of three options:
-
-1. First Excerpt looks for a pair of HTML comments in your markdown specifying a start and end point for the excerpt. `<!-- excerpt start -->` and `<!-- excerpt end -->` (capitalization not important)
+1. Excerpt first looks for a singular `<!-- excerpt -->` tag in the markdown.
+1. Then, Excerpt looks for a pair of HTML comments in your markdown specifying a start and end point for the excerpt. `<!-- excerpt start -->` and `<!-- excerpt end -->` (capitalization not important)
 2. If no start and end specified, the Excerpt tag will then look for the `excerpt` property in your MD file's frontmatter.
 3. If no `excerpt` is found in frontmatter, the tag will pull the first paragraph of the post.
 

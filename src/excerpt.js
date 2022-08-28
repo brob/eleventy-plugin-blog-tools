@@ -1,4 +1,8 @@
-const seperator = {start: '<!-- excerpt start -->', end: '<!-- excerpt end -->'};
+const seperator = {
+    start: '<!-- excerpt start -->', 
+    end: '<!-- excerpt end -->', 
+    total: '<!-- excerpt -->'
+};
 
 
 module.exports = function(article) {
@@ -7,7 +11,11 @@ module.exports = function(article) {
 
     let startPosition = articleContent.toLowerCase().indexOf(seperator.start);
     let endPosition = articleContent.toLowerCase().indexOf(seperator.end);
-    if (startPosition !== -1 && endPosition !== -1) {
+    let totalPosition = articleContent.toLowerCase().indexOf(seperator.total)
+
+    if (totalPosition !== -1) {
+        excerpt = articleContent.substring(0, totalPosition);
+    } else if (startPosition !== -1 && endPosition !== -1) {
         excerpt = articleContent.substring(startPosition + seperator.start.length, endPosition);
     } else if (!article.data.excerpt) {
         let startPosition = articleContent.toLowerCase().indexOf('<p>');
