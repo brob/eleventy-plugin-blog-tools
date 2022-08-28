@@ -51,7 +51,7 @@ The YouTube shortcode takes a YouTube video ID and creates the markup for a flui
 ```
 ### Vimeo
 
-The YouTube shortcode takes a Vimeo video ID and creates the markup for a fluidly-responsive Vimeo embed.
+The Vimeo shortcode takes a Vimeo video ID and creates the markup for a fluidly-responsive Vimeo embed.
 
 ```
 {% vimeo "idstring" %}
