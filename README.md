@@ -85,12 +85,21 @@ The related filter will pull items from a list based on parameters passed to the
 
 The basic usage is to filter a collection based on an array of items and a threshold.
 
-Syntax: `{{ collections.posts | related(<sort-field-key>, <sort-field-data>, <threshold-integer Defaults to 1>, <URL-to-Exclude-optional>)}}`
+Syntax: `{{ collections.posts | related(<sort-field-key>, <sort-field-data>, <threshold-integer Defaults to 1>, <fileSlug-to-Exclude-optional>)}}`
 
 The threshold integer is meant to force a number of array items in common. Defaults to 1.
 
-```
+Nunjucks:
+```nunjucks
 {% for post in collections.posts | related("sortField", sortField, 1) %}
+  {{ post.data.title }}
+{% endfor %}
+```
+
+Liquid:
+```nunjucks
+{% assign filtered = related: "sortField", sortField, 1, page.fileSlug %}
+{% for post in collections.posts %}
   {{ post.data.title }}
 {% endfor %}
 ```
