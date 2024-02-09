@@ -103,3 +103,7 @@ Liquid:
   {{ post.data.title }}
 {% endfor %}
 ```
+
+# License
+
+[ISC](LICENSE) (c) 2019-2024 Bryan Robinson and other contributors.
